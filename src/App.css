@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.pagination-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.delete-container {
+  margin-bottom: 10px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+  }
+
+  .search-container {
+    margin-top:10px ;
+    padding: 10px;
+  }
+  .search-container input,.search-container .search-icon
+ {
+    padding: 3px;
+    font-size: 20px;
+ } 
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+  } 
+  
+   .data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .selected-row{
+    background-color: grey;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+
+  .data-table .edit,.data-table .delete{
+    margin-right: 5px;
+    padding: 5px;
+  }
+  
+  .data-table td input[type="text"], .data-table th input[type="checkbox"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .pagination-container button, .delete-container button {
+    padding: 2px;
+    cursor: pointer;
+  } 
+
+  .App {
+    text-align: center;
+  }
+
+  .first-page, .previous-page ,.next-page, .last-page ,.btnName ,.delete{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
